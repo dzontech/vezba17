@@ -1,0 +1,28 @@
+<div class="container">
+<table class="table">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Logo</td>
+        <th>Played</th>
+        <th>Wins</th>
+        <th>Losses</th>
+        <th>WinPercent</th>
+        <th>GamesBehind</th>
+        <th>Streak</th>
+        <th>LastFive</th>
+    </tr>
+    <tr >
+        <td>{{nbasingle.id}}</td>
+        <td><a routerLink="/nba/{{nbasingle.id}}">{{nbasingle.name}}</a></td>
+        <td> <img style="height: 50px; width: 50px;" src="{{nbasingle.logo}}" alt="logo"> </td>
+        <td>{{nbasingle.played}}</td>
+        <td>{{nbasingle.wins}}</td>
+        <td>{{nbasingle.losses}}</td>
+        <td>{{nbasingle.winPercent}}</td>
+        <td>{{nbasingle.gamesBehind}}</td>
+        <td>{{nbasingle.streak}}</td>
+        <td>{{nbasingle.lastfive}}</td>
+    </tr>
+</table>
+</div>

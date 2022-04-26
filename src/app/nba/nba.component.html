@@ -1,0 +1,15 @@
+
+<div class="container">
+<table class="table table-striped" >
+    <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>Logo</td>
+    </tr>
+    <tr *ngFor="let n of nba?.teams">
+        <td>{{n.id}}</td>
+        <td><a routerLink="/nba/{{n.id}}">{{n.name}}</a></td>
+        <td> <img style="height: 50px; width: 50px;" src="{{n.logo}}" alt="logo"> </td>
+    </tr>
+</table>
+</div>
